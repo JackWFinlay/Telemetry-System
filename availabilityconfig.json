@@ -1,0 +1,6 @@
+{
+	"channel":8, // The channel to listen on.
+	"pulseNormal":5, // The normal wait for a pulse.
+	"pulseMin":1, // The minimum range on timer.
+	"pulseMax":70 // The maximum range on timer.
+}
