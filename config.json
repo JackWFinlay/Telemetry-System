@@ -1,0 +1,34 @@
+{
+	 
+	"availability":	{		
+						"channel" : 8, 
+						"pulseNormal" : 5,
+						"pulseMin" : 1, 
+						"pulseMax" : 70,
+						"tolerance" : 0.1
+					},
+
+	"runOnTimer": 	{
+						"channel" : 8, 
+						"pulseNormal" : 240,
+						"pulseMin" : 23, 
+						"pulseMax" : 315,
+						"tolerance" : 0.1
+					},
+
+	"mainsReturn": 	{
+						"channel" : 8, 
+						"pulseNormal" : 160,
+						"pulseMin" : 160, 
+						"pulseMax" : 1680,
+						"tolerance" : 0.1
+					},
+
+	"mainsFail": 	{
+						"channel" : 8, 
+						"pulseNormal" : 5,
+						"pulseMin" : 1, 
+						"pulseMax" : 25,
+						"tolerance" : 0.1
+					}
+}
