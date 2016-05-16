@@ -1,7 +1,7 @@
 {
 	 
 	"availability":	{		
-						"channel" : 8, 
+						"channel" : 7, 
 						"pulseNormal" : 5,
 						"pulseMin" : 1, 
 						"pulseMax" : 70,
