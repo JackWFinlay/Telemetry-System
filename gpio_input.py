@@ -3,10 +3,10 @@ import RPi.GPIO as GPIO
 import time
 import sys
 
-channel = sys.argv[1]
+channel = sys.argv[1] # Set the first supplied argument as the channel.
 
 GPIO.setmode(GPIO.BOARD) # Set library to use board numbering rather than internal numbering of the SOC channels
-GPIO.setup(channel, GPIO.IN) # Set up channel to use for input.
+GPIO.setup(channel, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set up channel to use for input. Bias the floating voltage towards zero.
 
 
 # while True:
@@ -14,10 +14,11 @@ generatorStatus = GPIO.input(channel) # Read value of the GPIO channel. At this 
     
 if (generatorStatus):
 	GPIO.cleanup() # Release channel for next run of script.
-        print "Reading status 1"
-        exit(0) # Nagios status 'Normal'
+    print "Reading status 1"
+    exit(0) # Nagios status 'Normal'
+    
 else:
 	GPIO.cleanup() # Release channel for next run of script.
 	print "Reading status 0"
-	exit(1) # Nagios status 'Warning'
+	exit(2) # Nagios status 'critical'
 
