@@ -1,6 +1,8 @@
 #!/usr/bin/python
+
+# Author: Jack Finlay 
+# Gets the current status of the attached hardware device.
 import RPi.GPIO as GPIO
-import time
 import sys
 
 channel = sys.argv[1] # Set the first supplied argument as the channel.

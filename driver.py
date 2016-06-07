@@ -1,4 +1,7 @@
 #!/usr/bin/python
+
+# Author Jack Finlay
+# Note: this file is completely useless for this application as I misread the engineering diagram.
 import RPi.GPIO as GPIO
 import json
 import time
