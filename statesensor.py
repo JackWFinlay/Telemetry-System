@@ -5,7 +5,7 @@
 import RPi.GPIO as GPIO
 import sys
 
-channel = sys.argv[1] # Set the first supplied argument as the channel.
+channel = int(sys.argv[1]) # Set the first supplied argument as the channel.
 
 GPIO.setmode(GPIO.BOARD) # Set library to use board numbering rather than internal numbering of the SOC channels
 GPIO.setup(channel, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set up channel to use for input. Bias the floating voltage towards zero.
